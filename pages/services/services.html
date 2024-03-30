@@ -25,7 +25,7 @@
             <a href="" class="navbar__menue-items__item__link"> About Us</a>
           </li>
           <li class="navbar__menue-items__item">
-            <a href="" class="navbar__menue-items__item__link"> Services</a>
+            <a href="" class="navbar__menue-items__item__link" id="services"> Services</a>
           </li>
           <li class="navbar__menue-items__item">
             <a href="" class="navbar__menue-items__item__link"> Work</a>
@@ -72,7 +72,7 @@
     <!-- HEADER END -->
 
     <!-- MAIN START -->
-    <main class="main">
+    <main class="main" id="services">
       <div class="services-cards container">
         <div class="services-card">
           <img
@@ -146,34 +146,44 @@
           />
         </div>
       </div>
-      <div class="main-contact">
-        <form class="main-form container">
-          <h1 class="main-form__title">A quick way to discuss details</h1>
-          <label for="name"
-            >name
-            <input type="text" placeholder="name" id="name" />
-          </label>
-
-          <label for="name"
-            >phone
-            <input type="text" placeholder="name" id="name" />
-          </label>
-
-          <label for="name"
-            >email
-            <input type="text" placeholder="name" id="name" />
-          </label>
-
-          <label for="name"
-            >message
-            <input type="text" placeholder="name" id="name" />
-          </label>
-          <!-- <input type="checkbox" />
-          <p>
-            I agree to receive communications from Createx Construction Bureau.
-          </p> -->
-          <button class="form-btn btn">send</button>
-        </form>
+      <div class="services__contact">
+        <div class="services__contact__container container">
+          <form action="#" class="services__contact__form">
+            <h2>A quick way to discuss details</h2>
+            <label for="#">name*</label>
+            <input
+              class="services__contact__form__input"
+              type="text"
+              placeholder="name"
+            />
+            <label for="#">surname*</label>
+            <input
+              class="services__contact__form__input"
+              type="text"
+              placeholder="surname"
+            />
+            <label for="#">email*</label>
+            <input
+              class="services__contact__form__input"
+              type="text"
+              placeholder="email"
+            />
+            <label for="#">message*</label>
+            <input
+              class="services__contact__form__input"
+              type="text"
+              placeholder="message"
+            />
+            <div class="checkbox__box">
+              <input type="checkbox" class="checkbox" />
+              <label for=""
+                >I agree to receive communications from Createx <br> Construction
+                Bureau.</label
+              >
+            </div>
+            <button class="services__contact__form__btn btn">send<button>
+          </form>
+        </div>
       </div>
     </main>
     <!-- MAIN END -->

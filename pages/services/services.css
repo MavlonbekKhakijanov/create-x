@@ -35,12 +35,15 @@
 }
 .main {
   margin-top: 10rem;
+  background-image: url(services-img/bg-image.png);
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 .services-cards {
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 .services-card {
   display: flex;
@@ -76,39 +79,59 @@
   padding: 2.3rem;
   line-height: 0;
 }
-.main-contact {
+
+.services__contact {
   background-image: url(./services-img/footer-bg.png);
-  background-position: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6rem;
-  display: flex;
+  width: 100%;
 }
-.main-form {
+.services__contact__container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 5rem 3rem;
-  background-color: var(--bg-color);
-  width: max-content;
+  justify-content: end;
+  padding: 10rem 5rem;
 }
-.main-form label {
-  text-transform: capitalize;
+.services__contact__form {
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+.services__contact__form h2 {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  font-weight: 700;
+  align-items: center;
+  color: var(--text-black-color);
+}
+
+.services__contact__form label {
+  display: block;
   font-size: 1.4rem;
   line-height: 2.1rem;
-  color: var(--label-color);
-  display: flex;
-  flex-direction: column;
-  width: max-content;
+  color: var(--text-black-color);
 }
-.main-form input {
-  width: 41.5rem;
-  height: 4.4rem;
+.services__contact__form__input {
+  width: 100%;
   padding: 2rem;
-  border: 1px solid var(--input-color);
-  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--input-color);
   outline: none;
   font-size: 1.4rem;
   line-height: 2.1rem;
-  background-color: var(--input-color);
+  color: var(--text-light-color);
+}
+.checkbox__box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.checkbox {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+input[type="checkbox"] {
+  accent-color: var(--primary-color);
 }
