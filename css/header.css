@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: var(--text-black-color);
+}
+.navbar__menue-items {
+  display: flex;
+  gap: 4rem;
+}
+.navbar__menue-items__item a {
+  padding: 3rem 0;
+  color: var(--text-black-color);
+  position: relative;
+  transition: 0.3s;
+}
+.navbar__menue-items__item a::before,
+.navbar__menue-items__item a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--text-black-color);
+  bottom: 2rem;
+}
+.navbar__menue-items__item a::after {
+  width: 0;
+  right: initial;
+  top: 2rem;
+}
+
+.menue__contact {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 3rem;
+}
+.menue__contact__phone,
+.menue__contact__message {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.menue__contact__phone p,
+.menue__contact__message p {
+  font-size: 18px;
+}
+.menue__contact__phone span,
+.menue__contact__message span {
+  font-size: 14px;
+}
+.menue__contact__phone i,
+.menue__contact__message i {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
