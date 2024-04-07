@@ -74,6 +74,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  align-items: start;
 }
 .section-hero__page {
   font-size: 1.4rem;
